@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		870466DF2A531B2B00690A6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870466DE2A531B2B00690A6C /* Constants.swift */; };
-		870466E22A53230A00690A6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 870466E12A53230A00690A6C /* GoogleService-Info.plist */; };
 		870466E52A53244A00690A6C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 870466E42A53244A00690A6C /* FirebaseAuth */; };
 		870466E72A53244A00690A6C /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 870466E62A53244A00690A6C /* FirebaseAuthCombine-Community */; };
 		870466E92A53244A00690A6C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 870466E82A53244A00690A6C /* FirebaseDatabase */; };
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		870466DE2A531B2B00690A6C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		870466E12A53230A00690A6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		870466F82A53377A00690A6C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		870466F92A53377A00690A6C /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		87694F232A537B1D005C6F3E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				87D370782A5239A000252DF0 /* LaunchScreen.storyboard */,
 				87D3707B2A5239A000252DF0 /* Info.plist */,
 				870466DE2A531B2B00690A6C /* Constants.swift */,
-				870466E12A53230A00690A6C /* GoogleService-Info.plist */,
 			);
 			path = chatiOS13;
 			sourceTree = "<group>";
@@ -210,7 +207,6 @@
 			files = (
 				870466FB2A53377A00690A6C /* MessageCell.xib in Resources */,
 				87D3707A2A5239A000252DF0 /* LaunchScreen.storyboard in Resources */,
-				870466E22A53230A00690A6C /* GoogleService-Info.plist in Resources */,
 				87D370772A5239A000252DF0 /* Assets.xcassets in Resources */,
 				87D370752A52399F00252DF0 /* Main.storyboard in Resources */,
 			);
