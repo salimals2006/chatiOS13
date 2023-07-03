@@ -6,24 +6,34 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
+    
+    
+    @IBOutlet weak var loginEmailTextField: UITextField!
+    @IBOutlet weak var loginPasswordTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loginEmailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.tintColor])
+        loginPasswordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.tintColor])
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        
+        if let loginEmail = loginEmailTextField.text, let loginPassword = loginPasswordTextField.text {
+            Auth.auth().signIn(withEmail: loginEmail, password: loginPassword){ authResult, error in
+                if let e = error {
+                    print("There was an error signing in, \(e.localizedDescription)")
+                } else {
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
+                }
+            }
+        }
     }
-    */
-
 }
